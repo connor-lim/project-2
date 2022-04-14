@@ -1,7 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-pHealth -= 10
-if (pHealth<= 0){
-	instance_destroy()
-	game_end()
-}
+draw_text(50,75,"Speed Boost Level 1: 75 points")

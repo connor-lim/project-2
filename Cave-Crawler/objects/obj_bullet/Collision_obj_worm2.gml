@@ -4,5 +4,5 @@
 with(obj_worm2)
 {
 	health -= 1
-	instance_destroy(other.id)
+	instance_destroy(other)
 }

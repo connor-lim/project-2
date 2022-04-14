@@ -7,6 +7,7 @@
     {"id":{"name":"obj_worm","path":"objects/obj_worm/obj_worm.yy",},"order":3,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},
     {"id":{"name":"spr_plant2","path":"sprites/spr_plant2/spr_plant2.yy",},"order":5,},
+    {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":9,},
     {"id":{"name":"spr_worm","path":"sprites/spr_worm/spr_worm.yy",},"order":4,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":8,},
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"order":1,},
