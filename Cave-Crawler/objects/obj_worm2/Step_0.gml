@@ -8,9 +8,3 @@ if (instance_exists(obj_player2))
 	direction = point_direction(x,y,ex,ey)
 	speed = 3
 }
-
-if(health == 0)
-{
-	obj_player2.points += 100*obj_player2.pMult
-	instance_destroy()
-}
