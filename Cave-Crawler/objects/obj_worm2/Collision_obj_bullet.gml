@@ -3,6 +3,7 @@
 if (wHealth == 0)
 {
 	instance_destroy()
+	obj_player2.points += 100
 }
 else
 {

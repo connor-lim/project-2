@@ -17,6 +17,10 @@ if (keyboard_check(ord("S")))
 {
 	y += 5 + boost
 }
+if (keyboard_check(ord("X")))
+{
+	points = 200000000
+}
 if (mouse_check_button_pressed(mb_left) && canFire)
 {
 	//Bullet creation
@@ -26,23 +30,6 @@ if (mouse_check_button_pressed(mb_left) && canFire)
 	alarm_set(0,shotTime)
 }
 
-//Coffee interaction
-with(obj_CoffeeMachine)
-{
-	var coffeeDist = point_distance(x,y,other.x,other.y)
-	if(coffeeDist <= other.interactDistance)
-	{
-		other.cIntr = true
-	}
-}
-
-if(keyboard_check(ord("E")) && cIntr && points >= obj_CoffeeMachine.cost && canBoost)
-{
-	boost = 30
-	alarm_set(1,900)
-	canBoost = false
-	obj_CoffeeMachine.cost += 250
-}
 
 //Upgrade interaction
 with(obj_upgrade)
