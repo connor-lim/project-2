@@ -1,5 +1,5 @@
 Cave Crawler
-Developed by Daysean Scott, Connor Lim, Thomas Guthrie, Jim Yang
+Developed by Daysean Scott, Connor Lim, Thomas Guthrie, Jim Yang, Xavier Richardson
 
 Instructions:
 Shoot the worms for points, and purchase upgrades to help you progress through the game(WIP)
