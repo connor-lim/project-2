@@ -36,26 +36,15 @@ if (mouse_check_button_pressed(mb_left) && canFire)
 }
 
 
-//Upgrade interaction
-with(obj_upgrade)
-{
-	var upgDist = point_distance(x,y,other.x,other.y)
-	if(upgDist <= other.interactDistance)
-	other.uIntr = true
-}
 
-if(keyboard_check(ord("E")) && uIntr && points >= obj_upgrade.cost)
+if (instance_exists(obj_weaponUpgrade))
 {
-	upgradeLevel += 1
-	shotTime  = 30/(2+upgradeLevel)
-	obj_upgrade.cost += 1000
-}
-
-if (obj_weaponUpgrade.turretsAvailable > 0 && keyboard_check_pressed(ord("R")) && obj_weaponUpgrade.turretsPlaced < 3)
-{
-	instance_create_layer(x,y,"Instances", obj_turret)
-	obj_weaponUpgrade.turretsAvailable -= 1
-	obj_weaponUpgrade.turretsPlaced += 1
+	if (obj_weaponUpgrade.turretsAvailable > 0 && keyboard_check_pressed(ord("R")) && obj_weaponUpgrade.turretsPlaced < 3)
+	{
+		instance_create_layer(x,y,"Instances", obj_turret)
+		obj_weaponUpgrade.turretsAvailable -= 1
+		obj_weaponUpgrade.turretsPlaced += 1
+	}
 }
 
 
