@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite7",
-    "path": "sprites/Sprite7/Sprite7.yy",
+    "name": "spr_plantMovement",
+    "path": "sprites/spr_plantMovement/spr_plantMovement.yy",
   },
   "solid": false,
   "visible": true,

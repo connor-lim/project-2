@@ -3,7 +3,14 @@
 inContact = true
 if (inContact && attackTime)
 {
-	obj_player2.pHealth -= 5
+	if (obj_player2.pArmor > 0)
+	{
+		obj_player2.pArmor -= 5
+	}
+	else
+	{
+		obj_player2.pHealth -= 5
+	}
 	attackTime = false
 	alarm_set(0,30)
 }

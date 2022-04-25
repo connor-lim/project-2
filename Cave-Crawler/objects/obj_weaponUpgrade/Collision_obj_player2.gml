@@ -12,3 +12,15 @@ if (upgradeLevel < 5)
 		}
 	}
 }
+
+if (turretsAvailable < 3 && turretsPlaced < 3)
+{
+	if (obj_player2.points >= tCost)
+	{
+		if(keyboard_check_pressed(ord("Q")))
+		{
+			turretsAvailable += 1
+		}
+	}
+}
+
