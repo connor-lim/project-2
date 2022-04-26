@@ -7,7 +7,8 @@ WASD to move
 Left click to shoot
 Use mouse to aim
 
-
-Cave Crawler Licensing Information
-
-All Current Artwork is original and is made by our team's Artist Daysean Scott
+Cheat Codes:
+Max Health - C
+Max Armor - V
+Next Room - B
+Points - X
