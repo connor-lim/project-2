@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
+audio_play_sound(healthPack,1,false)
 instance_destroy()
-obj_player2.pArmor += 10
+global.pArmor += 10

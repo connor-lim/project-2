@@ -17,6 +17,14 @@ if (instance_exists(obj_flyer))
     image_angle = point_direction(x,y,ex,ey);
 	enemyDirection = image_angle
 }
+if (instance_exists(obj_boss))
+{
+    var ex,ey;
+    ex = instance_nearest(x,y,obj_boss).x
+    ey = instance_nearest(x,y,obj_boss).y
+    image_angle = point_direction(x,y,ex,ey);
+	enemyDirection = image_angle
+}
 if (canShoot == true)
 {
 	//Bullet creation

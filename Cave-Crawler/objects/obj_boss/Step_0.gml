@@ -17,3 +17,11 @@ else
 {
 	image_xscale = -1
 }
+if (canShoot == true)
+{
+	//Bullet creation
+	instance_create_layer(x,y,"Instances", obj_bossFireBall)
+	//Timing
+	canShoot = false
+	alarm_set(1,shotTime)
+}

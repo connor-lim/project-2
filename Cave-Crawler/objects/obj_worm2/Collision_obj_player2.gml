@@ -3,13 +3,14 @@
 inContact = true
 if (inContact && attackTime)
 {
-	if (obj_player2.pArmor > 0)
+	audio_play_sound(playerDamage,1,false)
+	if (global.pArmor > 0)
 	{
-		obj_player2.pArmor -= 5
+		global.pArmor -= 5
 	}
 	else
 	{
-		obj_player2.pHealth -= 5
+		global.pHealth -= 5
 	}
 	attackTime = false
 	alarm_set(0,30)

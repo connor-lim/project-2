@@ -18,6 +18,6 @@ draw_text(x-100,y-80,"Build Barrier: " + string(obj_unbuiltBarrier.cost) + " Poi
 }
 with obj_playerAdvance{
 if(point_distance(x,y,other.x,other.y)<100){
-draw_text(x-100,y+15,"Next Level: 10000 Points")
+draw_text(x-100,y+15,"Points Needed For Next Level: 10000 Points")
 }
 }
